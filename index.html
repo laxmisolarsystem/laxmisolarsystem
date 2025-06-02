@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Laxmi Solar System | Patna’s Trusted Solar Solution</title>
-<meta name="description" content="Laxmi Solar System in Patna offers solar panels, batteries, and fans with expert installation. Call +91 9304924211.">
-<meta name="keywords" content="solar system patna, laxmi solar battery, solar panel patna, solar fans">
+  <meta name="description" content="Laxmi Solar System in Patna offers solar panels, batteries, fans, and torches with expert installation. Call +91 9304924211.">
+  <meta name="keywords" content="solar system patna, laxmi solar battery, solar panel patna, solar fans, torch light">
 
   <style>
     body {
@@ -161,153 +161,158 @@
       header h1 {
         font-size: 1.5rem;
       }
-
       .category-tabs {
         flex-direction: column;
+      }
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 28px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Laxmi Solar System</h1>
-  </header>
+<header>
+  <h1>Laxmi Solar System</h1>
+</header>
 
-  <div class="contact-bar">
-    📞 <a href="tel:+919304924211">+91 9304924211</a> |
-    📧 <a href="mailto:laxmisolarsystem11@gmail.com">laxmisolarsystem11@gmail.com</a> |
-    💬 <a href="https://wa.me/919304924211">WhatsApp Us</a>
+<div class="contact-bar">
+  📞 <a href="tel:+919304924211">+91 9304924211</a> |
+  📧 <a href="mailto:laxmisolarsystem11@gmail.com">laxmisolarsystem11@gmail.com</a> |
+  💬 <a href="https://wa.me/919304924211">WhatsApp Us</a>
+</div>
+
+<div class="search-filter">
+  <input type="text" id="searchInput" placeholder="Search products...">
+  <div class="category-tabs">
+    <button class="active" onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('battery')">Battery</button>
+    <button onclick="filterProducts('fan')">Fans</button>
+    <button onclick="filterProducts('solar')">Solar</button>
+    <button onclick="filterProducts('torch')">Torch</button>
+  </div>
+</div>
+
+<div class="products" id="productGrid">
+
+  <!-- Battery -->
+  <div class="product-card" data-category="battery" data-name="12v battery">
+    <img src="bdy.jpg" alt="12V 7.5AH Battery">
+    <div class="product-title">12V 7.5AH VRLA Battery</div>
+    <div class="product-bio">Reliable backup power ideal for emergency lighting, UPS, and DC systems.</div>
+    <div class="product-price">₹850</div>
+    <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in 12V 7.5AH Battery">Inquire on WhatsApp</a>
   </div>
 
-  <div class="search-filter">
-    <input type="text" id="searchInput" placeholder="Search products...">
-    <div class="category-tabs">
-      <button class="active" onclick="filterProducts('all')">All</button>
-      <button onclick="filterProducts('battery')">Battery</button>
-      <button onclick="filterProducts('fan')">Fans</button>
-      <button onclick="filterProducts('solar')">Solar</button>
-    </div>
+  <div class="product-card" data-category="battery" data-name="6v battery">
+    <img src="414NAoRoODL._AC_UF1000,1000_QL80_.jpg" alt="6V Battery">
+    <div class="product-title">6V VRLA Battery</div>
+    <div class="product-bio">Compact 6V battery ideal for emergency lights, toys, and small backup systems.</div>
+    <div class="product-price">₹275</div>
+    <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in 6V Battery">Inquire on WhatsApp</a>
   </div>
 
-  <div class="products" id="productGrid">
-
-    <!-- Battery -->
-    <div class="product-card" data-category="battery" data-name="12v battery">
-      <img src="bdy.jpg" alt="12V 7.5AH Battery">
-      <div class="product-title">12V 7.5AH VRLA Battery</div>
-      <div class="product-bio">Reliable backup power ideal for emergency lighting, UPS, and DC systems.</div>
-      <div class="product-price">₹850</div>
-      <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in 12V 7.5AH Battery">Inquire on WhatsApp</a>
-    </div>
-
-    <div class="product-card" data-category="battery" data-name="6v battery">
-      <img src="414NAoRoODL._AC_UF1000,1000_QL80_.jpg" alt="6V Battery">
-      <div class="product-title">6V VRLA Battery</div>
-      <div class="product-bio">Compact 6V battery ideal for emergency lights, toys, and small backup systems.</div>
-      <div class="product-price">₹275</div>
-      <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in 6V Battery">Inquire on WhatsApp</a>
-    </div>
-
-    <div class="product-card" data-category="battery" data-name="exide battery">
-      <img src="exide2.jpg" alt="Exide LL-6LMS150L Battery">
-      <div class="product-title">Exide Solatubular LL-6LMS150L</div>
-      <div class="product-bio">Long-life tubular battery designed for solar backup systems. Maintenance free and rugged.</div>
-      <div class="product-price">Contact for Price</div>
-      <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Exide LL-6LMS150L Battery">Inquire on WhatsApp</a>
-    </div>
-
-    <!-- Fans -->
-    <div class="product-card" data-category="fan" data-name="optima 700 fan">
-      <img src="fan700.png" alt="Optima 700 Fan">
-      <div class="product-title">Optima 700 Fan</div>
-      <div class="product-bio">2-in-1 pedestal & table fan with high power motor, fast mobile charging, timer & LED light.</div>
-      <div class="product-price">₹1550</div>
-      <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Optima 700 Fan">Inquire on WhatsApp</a>
-    </div>
-
-    <div class="product-card" data-category="fan" data-name="optima 500 fan">
-      <img src="fan.png" alt="Optima 500 Fan">
-      <div class="product-title">Optima 500 Fan</div>
-      <div class="product-bio">2-in-1 pedestal & table fan with high power motor, fast mobile charging, timer & LED light.</div>
-      <div class="product-price">₹1500</div>
-      <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Optima 500 Fan">Inquire on WhatsApp</a>
-    </div>
-
-    <!-- Solar -->
-    <div class="product-card" data-category="solar" data-name="solar panel">
-      <img src="solar.png" alt="Solar Panel">
-      <div class="product-title">Solar Panel</div>
-      <div class="product-bio">High-efficiency solar panels ideal for home and commercial energy needs.</div>
-      <div class="product-price">Contact for Price</div>
-      <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Solar Panels">Inquire on WhatsApp</a>
-    </div>
-
+  <div class="product-card" data-category="battery" data-name="exide battery">
+    <img src="exide2.jpg" alt="Exide LL-6LMS150L Battery">
+    <div class="product-title">Exide Solatubular LL-6LMS150L</div>
+    <div class="product-bio">Long-life tubular battery designed for solar backup systems. Maintenance free and rugged.</div>
+    <div class="product-price">Contact for Price</div>
+    <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Exide LL-6LMS150L Battery">Inquire on WhatsApp</a>
   </div>
 
-  <footer>
-    📍 Patliputra Bus Terminal, Gate No. 2, Near SBI ATM, Bairiya, Patna, Bihar – 800007<br>
-    © 2025 Laxmi Solar System. All rights reserved.
-  </footer>
+  <!-- Fans -->
+  <div class="product-card" data-category="fan" data-name="optima 700 fan">
+    <img src="fan700.png" alt="Optima 700 Fan">
+    <div class="product-title">Optima 700 Fan</div>
+    <div class="product-bio">2-in-1 pedestal & table fan with high power motor, fast mobile charging, timer & LED light.</div>
+    <div class="product-price">₹1550</div>
+    <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Optima 700 Fan">Inquire on WhatsApp</a>
+  </div>
 
-  <script>
-    const searchInput = document.getElementById('searchInput');
-    const productCards = document.querySelectorAll('.product-card');
-    const categoryButtons = document.querySelectorAll('.category-tabs button');
+  <div class="product-card" data-category="fan" data-name="optima 500 fan">
+    <img src="fan.png" alt="Optima 500 Fan">
+    <div class="product-title">Optima 500 Fan</div>
+    <div class="product-bio">2-in-1 pedestal & table fan with high power motor, fast mobile charging, timer & LED light.</div>
+    <div class="product-price">₹1500</div>
+    <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Optima 500 Fan">Inquire on WhatsApp</a>
+  </div>
 
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase();
-      productCards.forEach(card => {
-        const name = card.dataset.name.toLowerCase();
-        card.classList.toggle('hide', !name.includes(query));
-      });
+  <!-- Solar -->
+  <div class="product-card" data-category="solar" data-name="solar panel">
+    <img src="solar.png" alt="Solar Panel">
+    <div class="product-title">Solar Panel</div>
+    <div class="product-bio">High-efficiency solar panels ideal for home and commercial energy needs.</div>
+    <div class="product-price">Contact for Price</div>
+    <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Solar Panels">Inquire on WhatsApp</a>
+  </div>
+
+  <!-- Torch -->
+  <div class="product-card" data-category="torch" data-name="power ace torch">
+    <img src="torch.jpg" alt="Power Ace Saathi Torch">
+    <div class="product-title">Power Ace Torch</div>
+    <div class="product-bio">Durable rechargeable torch with long battery life, perfect for homes and outdoor use.</div>
+    <div class="product-price">Contact for Price</div>
+    <a class="whatsapp-btn" href="https://wa.me/919304924211?text=I'm interested in Power Ace Saathi Torch">Inquire on WhatsApp</a>
+  </div>
+
+</div>
+
+<footer>
+  📍 Patliputra Bus Terminal, Gate No. 2, Near SBI ATM, Bairiya, Patna, Bihar – 800007<br>
+  © 2025 Laxmi Solar System. All rights reserved.
+</footer>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const productCards = document.querySelectorAll('.product-card');
+  const categoryButtons = document.querySelectorAll('.category-tabs button');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    productCards.forEach(card => {
+      const name = card.dataset.name.toLowerCase();
+      card.classList.toggle('hide', !name.includes(query));
     });
+  });
 
-    function filterProducts(category) {
-      categoryButtons.forEach(btn => btn.classList.remove('active'));
-      document.querySelector(`.category-tabs button[onclick*="${category}"]`).classList.add('active');
-      productCards.forEach(card => {
-        if (category === 'all') {
-          card.classList.remove('hide');
-        } else {
-          card.classList.toggle('hide', card.dataset.category !== category);
-        }
-      });
-    }
-  </script>
-
-
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/919304924211" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
-  💬
-</a>
-<style>
-.whatsapp-float {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 28px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-@media (max-width: 600px) {
-  .whatsapp-float {
-    width: 45px;
-    height: 45px;
-    font-size: 24px;
+  function filterProducts(category) {
+    categoryButtons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.category-tabs button[onclick*="${category}"]`).classList.add('active');
+    productCards.forEach(card => {
+      if (category === 'all') {
+        card.classList.remove('hide');
+      } else {
+        card.classList.toggle('hide', card.dataset.category !== category);
+      }
+    });
   }
-}
-</style>
+</script>
+
+<a href="https://wa.me/919304924211" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
 
 </body>
 </html>
